@@ -306,36 +306,6 @@ AI 会自动：
 
 ---
 
-### 使用 CLI 创建（可选）
-
-如果你更喜欢命令行，也可以使用 CLI：
-
-```bash
-# 创建新项目
-novel create 我的小说 东方玄幻 "少年为救母亲卷入神秘规则世界"
-
-# 生成卷大纲
-novel outline 我的小说 1
-
-# 生成章节
-novel chapter 我的小说 1 开端
-
-# 检查一致性
-novel check 我的小说 1-10
-```
-
-如果你还没有完整工作区，也可以直接使用它完成：
-
-- 角色档案设计
-- 世界观补完
-- 分卷大纲设计
-- 章节骨架生成
-- 跨章节一致性检查
-
-> ⚠️ 没有项目文件时，输出会更多依赖当前会话上下文，稳定性不如工作区模式。
-
----
-
 ## 📦 安装
 
 ### OpenClaw（推荐）
@@ -427,31 +397,6 @@ git clone https://github.com/dashenbibi/novel-master.git "%USERPROFILE%\.agents\
 
 ---
 
-## 🖥️ CLI
-
-仓库包含一个轻量 CLI 入口：
-
-```bash
-# 创建新项目
-novel create <书名> <类型> <核心创意>
-
-# 生成卷大纲
-novel outline <项目> <卷号>
-
-# 生成章节模板
-novel chapter <项目> <章号> <标题>
-
-# 润色章节
-novel polish <项目> <章号>
-
-# 一致性检查
-novel check <项目> <起始章>-<结束章>
-```
-
-> ⚠️ 当前 CLI 定位为**轻量脚手架**，而非完整创作引擎。详见 [COMPATIBILITY.md](COMPATIBILITY.md)。
-
----
-
 ## 📚 文档导航
 
 | 文档 | 说明 |
@@ -462,18 +407,16 @@ novel check <项目> <起始章>-<结束章>
 | [assets/templates/](assets/templates/) | 文件模板 |
 | [CHANGELOG.md](CHANGELOG.md) | 版本变更记录 |
 | [CONTRIBUTING.md](CONTRIBUTING.md) | 贡献指南 |
-| [COMPATIBILITY.md](COMPATIBILITY.md) | 主规范与 CLI 差异说明 |
 
 ---
 
 ## 🗺️ Roadmap
 
-### Phase 1: CLI 追平主规范
+### Phase 1: 功能增强
 
-- [ ] `novel sync` - 同步章节更新到角色/世界/伏笔追踪
-- [ ] `novel check --deep` - 完整一致性检查（不只是文件存在性）
-- [ ] `novel validate` - 验证输出是否符合 SKILL.md 标准
-- [ ] 交互模式 - `novel create` 引导式问答创建项目
+- [ ] 一致性检查增强（不只是文件存在性）
+- [ ] 输出验证（验证是否符合 SKILL.md 标准）
+- [ ] 交互模式（引导式创建项目）
 
 ### Phase 2: 模板资源升级
 
