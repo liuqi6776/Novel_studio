@@ -1,68 +1,133 @@
-# novel-master
+<p align="center">
+  <a href="https://github.com/dashenbibi/novel-master">
+    <img src="https://img.shields.io/badge/📖-novel--master-blue?style=for-the-badge" alt="novel-master">
+  </a>
+</p>
 
-> 仓库地址：`https://github.com/dashenbibi/novel-master.git`
+<h1 align="center">novel-master</h1>
 
-[![GitHub stars](https://img.shields.io/github/stars/dashenbibi/novel-master?style=flat-square)](https://github.com/dashenbibi/novel-master/stargazers)
-[![GitHub license](https://img.shields.io/github/license/dashenbibi/novel-master?style=flat-square)](https://github.com/dashenbibi/novel-master/blob/main/LICENSE)
-[![GitHub release](https://img.shields.io/github/v/release/dashenbibi/novel-master?style=flat-square)](https://github.com/dashenbibi/novel-master/releases)
+<p align="center">
+  <strong>面向中文长篇连载的结构化 AI writing skill</strong>
+</p>
 
-面向中文长篇连载的结构化 AI writing skill（novel writing workflow）。
+<p align="center">
+  <a href="https://github.com/dashenbibi/novel-master">
+    <img src="https://img.shields.io/github/stars/dashenbibi/novel-master?style=flat-square&logo=github" alt="GitHub stars">
+  </a>
+  <a href="https://github.com/dashenbibi/novel-master/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/dashenbibi/novel-master?style=flat-square" alt="GitHub license">
+  </a>
+  <a href="https://github.com/dashenbibi/novel-master/releases">
+    <img src="https://img.shields.io/github/v/release/dashenbibi/novel-master?style=flat-square" alt="GitHub release">
+  </a>
+  <a href="https://github.com/dashenbibi/novel-master/issues">
+    <img src="https://img.shields.io/github/issues/dashenbibi/novel-master?style=flat-square" alt="GitHub issues">
+  </a>
+</p>
 
-它不是一个“随便写点文案”的通用提示词集合，而是一套可执行的长篇创作协议：项目总览、角色档案、世界观、卷纲、章节、伏笔追踪、风格约束、一致性检查，都纳入同一工作流。
+---
 
-如果这个项目对你有帮助，欢迎点一个 Star，这会显著帮助项目被更多创作者看到。
+它不是一个"随便写点文案"的通用提示词集合，而是一套**可执行的长篇创作协议**：项目总览、角色档案、世界观、卷纲、章节、伏笔追踪、风格约束、一致性检查，都纳入同一工作流。
 
-## 10 秒看懂它做什么
+如果这个项目对你有帮助，欢迎点一个 **Star** ⭐，这会显著帮助项目被更多创作者看到。
 
-输入：
+---
 
-```text
-请用 novel-master 帮我规划一部长篇都市悬疑，先输出核心卖点、主线目标、前三卷推进表。
+## 🎯 功能亮点
+
+| 特性 | 说明 |
+|------|------|
+| 📁 **项目结构设计** | 总览、角色、世界观、卷纲、章节、追踪文件一体化 |
+| 👤 **角色档案维护** | 声线、行为模式、关系网络、弧线、当前状态 |
+| 🌍 **世界观维护** | 规则、限制、代价、历史、社会、空间关系 |
+| 📖 **卷纲与章节生产** | 先骨架 → 再正文 → 再润色 → 再质检 → 再同步 |
+| 🔍 **一致性检查** | 角色、世界、术语、因果、时间线、伏笔状态 |
+| 🎣 **伏笔追踪** | 埋设、回收、跨卷呼应、状态同步 |
+
+---
+
+## 📸 效果展示
+
+### 角色档案生成
+
+<details>
+<summary>点击展开示例</summary>
+
+```markdown
+## 1. 基本信息
+- 姓名: 沈言
+- 身份: 灯阶守夜人 / 前审议庭记录官
+- 阵营: 中立偏秩序
+- 社会位置: 边缘执行层，有信息渠道但无实权
+
+## 2. 性格与行为
+- 核心性格: 冷硬、算账、保底线
+- 行为模式: 压力下先保命再保人；被背叛时记账不翻脸
+- 动机: 查清旧协议与母亲记忆的关系
+- 价值观底线: 不出卖同伴
+- 盲区: 对制度仍有幻想
+
+## 3. 声线与说话风格
+- 语气基调: 短句先手，偏命令式
+- 口头禅: "算账""先说代价"
+- 不会说的话: "相信我""我会保护你"
 ```
 
-输出（结构化）：
+</details>
 
-- 项目方向与核心卖点
-- 角色关系与冲突轴
-- 世界规则与限制代价
-- 分卷目标与章节推进
-- 伏笔埋设与回收计划
+### 章节骨架生成
 
-## 为什么它更适合长篇
+<details>
+<summary>点击展开示例</summary>
 
-- 从“项目管理”而不是“单次出文”角度设计
-- 强制跟踪角色状态、世界规则、术语一致性
-- 支持跨章节伏笔追踪与回收检查
-- 兼容工作区文件优先模式，便于长期连载维护
+```markdown
+# 第 18 章：灰巷低照
 
-## 快速入口
+**开场锚点**: 时间/灰巷/陆澄视角/通过挂名契约进入清账体系
 
-- 新手安装：见 `README.md` 下方“常用工具安装与使用（小白版）”
-- 先看示例：`examples/minimal-workspace/`
-- 核心规则：`SKILL.md`
-- 模板与规范：`references/` 与 `assets/templates/`
+**核心冲突**: 陆澄被标记为转壳预审，必须在三日内完成抵押补齐
 
-## 核心能力
+**剧情节点**:
+1. 灰巷契约签署，记忆抵押生效
+2. 低照审讯启动，陈禾签名出现在预审簿
+3. 陆澄发现挂名壳可转的漏洞线索
+4. 宁栖以额外代价换取同行权限
+5. 誓约卷送名单墙备案，时间窗口收紧
 
-- 长篇项目结构设计：总览、角色、世界观、卷纲、章节、追踪文件
-- 项目专属规则生成：文风、称谓、术语、节奏、禁忌
-- 角色档案维护：声线、行为模式、关系网络、弧线、当前状态
-- 世界观维护：规则、限制、代价、历史、社会、空间关系
-- 卷纲与章节生产：先骨架，再正文，再润色，再质检，再同步
-- 一致性检查：角色、世界、术语、因果、时间线、伏笔状态
+**章末钩子**: 名单墙复核令启动，判红加码
+```
 
-## 快速开始
+</details>
+
+---
+
+## 👥 适合谁
+
+| 适合 | 不适合 |
+|------|--------|
+| ✅ 正在写长篇网文（50万字+）的作者 | ❌ 只想写短篇/文案的人 |
+| ✅ 需要维护复杂人物关系和剧情线的创作者 | ❌ 不想维护项目结构的人 |
+| ✅ 使用 AI 辅助创作但苦于输出不一致的人 | ❌ 期望一键生成完整小说的人 |
+| ✅ 有一定写作基础，追求结构化创作的人 | ❌ 完全不想学习新工具的人 |
+
+---
+
+## 🚀 快速开始
 
 ### 方式一：在已有小说工作区中使用
 
-当工作区内已经存在下列文件时，novel-master 会优先读取项目上下文，而不是凭空补设定：
+当工作区内已经存在下列文件时，novel-master 会优先读取项目上下文：
 
-- rules.md
-- 00-overview.md
-- 01-characters/
-- 02-world/
-- 03-volumes/
-- 05-tracker/
+```
+your-novel/
+├── rules.md           # 项目专属规则
+├── 00-overview.md     # 项目总览
+├── 01-characters/     # 角色档案
+├── 02-world/          # 世界观设定
+├── 03-volumes/        # 分卷大纲
+├── 04-chapters/       # 章节内容
+└── 05-tracker/        # 追踪表
+```
 
 推荐调用顺序：
 
@@ -71,7 +136,7 @@
 3. 再生成章节骨架与正文
 4. 再做润色、质检和同步
 
-### 方式二：只把它当成结构化创作 skill 使用
+### 方式二：只当成结构化创作 skill 使用
 
 如果你还没有完整工作区，也可以直接使用它完成：
 
@@ -81,170 +146,165 @@
 - 章节骨架生成
 - 跨章节一致性检查
 
-但没有项目文件时，输出会更多依赖当前会话上下文，稳定性不如工作区模式。
+> ⚠️ 没有项目文件时，输出会更多依赖当前会话上下文，稳定性不如工作区模式。
 
-## 示例用法
+---
 
-### 示例 1：搭项目
+## 📦 安装
 
-```text
-请用 novel-master 帮我规划一部长篇东方悬疑玄幻，先输出项目方向、核心卖点、主线目标，再给出建议的目录结构。
+### OpenClaw（推荐）
+
+```bash
+# 1. 创建技能目录
+mkdir -p ~/.agents/skills
+
+# 2. 克隆仓库
+git clone https://github.com/dashenbibi/novel-master.git ~/.agents/skills/novel-master
+
+# 3. 重启 OpenClaw 或刷新技能列表
 ```
 
-### 示例 2：补角色档案
+### 支持 Skills 的 VS Code Agent 环境
+
+```bash
+mkdir -p ~/.agents/skills
+git clone https://github.com/dashenbibi/novel-master.git ~/.agents/skills/novel-master
+```
+
+然后重启 VS Code 窗口，或执行 "Reload Window"。
+
+### 手动安装（不会用 Git）
+
+1. 在 GitHub 页面点击 "Code" → "Download ZIP"
+2. 解压后重命名为 `novel-master`
+3. 把目录放到 `~/.agents/skills/`
+4. 重启工具并测试调用
+
+---
+
+## 💡 示例用法
+
+### 搭项目
+
+```text
+请用 novel-master 帮我规划一部长篇东方玄幻，先输出项目方向、核心卖点、主线目标，再给出建议的目录结构。
+```
+
+### 补角色档案
 
 ```text
 请根据现有主线，把女二号角色档案补全到可执行状态，重点补声线、行为模式、关系网络和转折条件。
 ```
 
-### 示例 3：写章节骨架
+### 写章节骨架
 
 ```text
 请为第 18 章生成骨架，必须包含开场锚点、核心冲突、关系变化点、认知变化点和章末钩子。
 ```
 
-### 示例 4：做一致性检查
+### 做一致性检查
 
 ```text
 请检查第 21 章到第 28 章在角色状态、世界规则和伏笔状态上的冲突，只列问题，不直接改文。
 ```
 
-## 最小示例
+---
 
-仓库提供了一套脱敏的最小工作区示例，用来展示 novel-master 推荐维护的基础文件形态：
+## 🆚 与其他方案的区别
 
-- 项目总览
-- 项目规则
-- 角色档案
-- 世界观
-- 卷纲
-- 章节
-- 伏笔追踪
+| 特性 | novel-master | 普通提示词 | 通用写作工具 |
+|------|:------------:|:----------:|:------------:|
+| 长篇一致性检查 | ✅ | ❌ | 部分 |
+| 角色状态追踪 | ✅ | ❌ | ❌ |
+| 伏笔管理 | ✅ | ❌ | ❌ |
+| 工作区优先 | ✅ | ❌ | 部分 |
+| 可执行规则 | ✅ | 部分 | 部分 |
+| 跨卷同步 | ✅ | ❌ | ❌ |
 
-如果你第一次接触这个项目，建议先用最小示例理解它的工作方式，再决定是否接入自己的长篇项目。
+---
 
-## CLI
+## 🖥️ CLI
 
-仓库包含一个轻量 CLI 入口：scripts/novel-cli.js。
-
-当前 CLI 更接近“脚手架和占位输出”，适合快速创建项目目录、章节模板、卷纲模板，不等同于完整创作引擎。
-
-主规范与 CLI/模板资源的当前差异，见 COMPATIBILITY.md。
-
-已提供的命令包括：
-
-- novel create
-- novel outline
-- novel chapter
-- novel polish
-- novel check
-
-如果你要本地试用，可将 scripts/novel-cli.js 设为可执行文件，并放入 PATH。
-
-依赖：
-
-- Node.js
-
-## 常用工具安装与使用（小白版）
-
-下面给出最常见的使用方式。你不需要一次全懂，按步骤做即可。
-
-### OpenClaw（推荐）
-
-1. 安装基础环境
-
-- 安装 Node.js（建议 18+）
-- 安装 Git
-
-2. 把 skill 放到技能目录
-
-下面命令已使用真实仓库地址，可直接复制执行。
+仓库包含一个轻量 CLI 入口：
 
 ```bash
-mkdir -p ~/.agents/skills
-git clone https://github.com/dashenbibi/novel-master.git ~/.agents/skills/novel-master
+# 创建新项目
+novel create <书名> <类型> <核心创意>
+
+# 生成卷大纲
+novel outline <项目> <卷号>
+
+# 生成章节模板
+novel chapter <项目> <章号> <标题>
+
+# 润色章节
+novel polish <项目> <章号>
+
+# 一致性检查
+novel check <项目> <起始章>-<结束章>
 ```
 
-如果你已经在本地有这个仓库，也可以直接复制整个目录到 `~/.agents/skills/novel-master`。
+> ⚠️ 当前 CLI 定位为**轻量脚手架**，而非完整创作引擎。详见 [COMPATIBILITY.md](COMPATIBILITY.md)。
 
-3. 重启 OpenClaw 或刷新技能列表
+---
 
-- 关闭并重新打开工具
-- 或使用工具内的“重载/刷新 skills”功能（不同版本名称可能不同）
+## 📚 文档导航
 
-4. 验证是否生效
+| 文档 | 说明 |
+|------|------|
+| [SKILL.md](SKILL.md) | 核心规则与执行协议 |
+| [examples/minimal-workspace/](examples/minimal-workspace/) | 最小工作区示例 |
+| [references/](references/) | 模板与规范参考 |
+| [assets/templates/](assets/templates/) | 文件模板 |
+| [CHANGELOG.md](CHANGELOG.md) | 版本变更记录 |
+| [CONTRIBUTING.md](CONTRIBUTING.md) | 贡献指南 |
+| [COMPATIBILITY.md](COMPATIBILITY.md) | 主规范与 CLI 差异说明 |
 
-直接输入：
+---
 
-```text
-请用 novel-master 帮我规划一部长篇都市悬疑，先输出项目方向和前三卷主线。
-```
+## 🗺️ Roadmap
 
-如果模型开始按“角色/世界观/卷纲/章节/伏笔”结构输出，说明安装成功。
+- [ ] CLI 追平主规范（完整同步流程）
+- [ ] 模板资源升级
+- [ ] 更多示例项目
+- [ ] VS Code 插件支持
+- [ ] Web UI（可选）
 
-### 支持 Skills 的 VS Code Agent 环境
+---
 
-如果你使用的是支持 skills 的 VS Code Agent 环境，通常也可以使用同一目录约定：
+## 🤝 贡献
 
-```bash
-mkdir -p ~/.agents/skills
-git clone https://github.com/dashenbibi/novel-master.git ~/.agents/skills/novel-master
-```
+提交改动前，请先阅读 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
-然后重启 VS Code 窗口，或执行“Reload Window”后再测试调用。
-
-### 不会用 Git 的手动安装方式
-
-1. 在网页下载仓库 ZIP
-2. 解压后重命名为 `novel-master`
-3. 把目录放到 `~/.agents/skills/`
-4. 重启工具并测试调用
-
-### 30 秒自检清单
-
-如果你是第一次安装，按这 5 条快速确认：
-
-1. 存在文件 `~/.agents/skills/novel-master/SKILL.md`
-2. `SKILL.md` 顶部字段合法（如 `name`、`description`、`metadata`）
-3. 已重启工具或刷新 skills 列表
-4. 测试提示词可触发结构化输出（角色/世界观/卷纲/章节/伏笔）
-5. `scripts/novel-cli.js` 需要时可执行，且本机有 Node.js
-
-### 常见问题
-
-- 提示找不到 skill：检查目录是否为 `~/.agents/skills/novel-master/SKILL.md`
-- 提示字段不支持：检查 `SKILL.md` 头部字段，只使用规范支持字段
-- 输出不稳定：先在项目目录提供 `rules.md`、`00-overview.md`、`01-characters/` 等上下文文件
-- CLI 命令不可用：确认 Node.js 可用，并且 `scripts/novel-cli.js` 有执行权限
-
-## 设计原则
-
-- 工作区优先：已有项目文件优先于 skill 默认值
-- 可执行优先：规则必须能落实到正文，而不是空泛建议
-- 同步优先：角色、世界、卷纲、伏笔要能彼此回写
-- 结构优先：先控制项目结构，再追求文本细节
-- 审查优先：做质检时先报问题，再决定是否修复
-
-## 开源说明
-
-本仓库建议将“skill 定义、模板、脚本”与“由 skill 生成的小说正文内容”分开看待。
-
-- 仓库中的代码、模板、说明文档应采用明确开源许可证
-- 使用本 skill 生成的小说正文、人物设定、世界观文本，不应默认自动继承仓库许可证
-
-本仓库当前采用 MIT 许可证，正式文本见 LICENSE。
-
-## 贡献
-
-提交改动前，建议先阅读 CONTRIBUTING.md。
-
-优先欢迎以下类型的贡献：
+优先欢迎：
 
 - 提高结构清晰度和可执行性
 - 补充长篇创作中的一致性检查规则
 - 改进模板但不引入具体作品私货
 - 增加脱敏示例与回归样例
 
-## 版本记录
+---
 
-版本变更见 CHANGELOG.md。
+## 📄 许可证
+
+本仓库采用 [MIT License](LICENSE)。
+
+**注意**：使用本 skill 生成的小说正文、人物设定、世界观文本，其版权归作者所有，不自动继承本仓库许可证。
+
+---
+
+## ⭐ Star History
+
+如果这个项目对你有帮助，欢迎 Star 支持！
+
+<p align="center">
+  <a href="https://www.star-history.com/#dashenbibi/novel-master&Date">
+    <img src="https://api.star-history.com/svg?repos=dashenbibi/novel-master&type=Date" alt="Star History Chart">
+  </a>
+</p>
+
+---
+
+<p align="center">
+  Made with ❤️ for Chinese long-form fiction writers
+</p>
