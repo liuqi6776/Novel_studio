@@ -42,38 +42,6 @@
 - 核心规则：`SKILL.md`
 - 模板与规范：`references/` 与 `assets/templates/`
 
-## GitHub Topics 推荐（提高搜索曝光）
-
-建议在仓库 `Settings -> General -> Topics` 中添加以下标签：
-
-- `ai-writing`
-- `novel-writing`
-- `creative-writing`
-- `storytelling`
-- `long-form-writing`
-- `prompt-engineering`
-- `workflow`
-- `writing-assistant`
-- `openclaw`
-- `ai-skill`
-
-建议先使用 8-10 个最相关标签，后续按实际流量再微调。
-
-## 定位
-
-适合：
-
-- 中文长篇网络小说创作
-- 多卷连载项目规划
-- 角色关系复杂、设定层级多、伏笔回收周期长的作品
-- 需要把“写作”和“项目管理”放在一起维护的作者
-
-不适合：
-
-- 一次性短篇或诗歌写作
-- 完全自由流、拒绝结构约束的实验性文本
-- 只想要一句 prompt 立刻出稿、且不维护上下文的使用方式
-
 ## 核心能力
 
 - 长篇项目结构设计：总览、角色、世界观、卷纲、章节、追踪文件
@@ -82,15 +50,6 @@
 - 世界观维护：规则、限制、代价、历史、社会、空间关系
 - 卷纲与章节生产：先骨架，再正文，再润色，再质检，再同步
 - 一致性检查：角色、世界、术语、因果、时间线、伏笔状态
-
-## 仓库结构
-
-- SKILL.md：skill 主定义与执行规则
-- references/：模板与参考规范
-- scripts/：辅助命令行脚本
-- assets/：CLI 使用的项目模板资源
-- examples/：脱敏后的最小示例工作区
-- COMPATIBILITY.md：主规范、CLI 与模板资源的口径说明
 
 ## 快速开始
 
@@ -265,13 +224,6 @@ git clone https://github.com/dashenbibi/novel-master.git ~/.agents/skills/novel-
 - 同步优先：角色、世界、卷纲、伏笔要能彼此回写
 - 结构优先：先控制项目结构，再追求文本细节
 - 审查优先：做质检时先报问题，再决定是否修复
-
-## 输出边界
-
-- 本 skill 默认面向中文长篇网文，不承诺适配全部文学类型
-- 本 skill 追求稳定生产和一致性，不追求完全自由的文体实验
-- 本 skill 提供结构、约束和审查框架，不替代作者对价值观、版权、事实与质量的最终判断
-- “去 AI 味”只能提高文本自然度，不能保证完全不可识别
 
 ## 开源说明
 
