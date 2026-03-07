@@ -154,21 +154,50 @@ your-novel/
 
 ### OpenClaw（推荐）
 
+**macOS / Linux:**
+
 ```bash
-# 1. 创建技能目录
 mkdir -p ~/.agents/skills
-
-# 2. 克隆仓库
 git clone https://github.com/dashenbibi/novel-master.git ~/.agents/skills/novel-master
-
-# 3. 重启 OpenClaw 或刷新技能列表
 ```
+
+**Windows (PowerShell):**
+
+```powershell
+mkdir -Force "$HOME\.agents\skills"
+git clone https://github.com/dashenbibi/novel-master.git "$HOME\.agents\skills\novel-master"
+```
+
+**Windows (CMD):**
+
+```cmd
+mkdir "%USERPROFILE%\.agents\skills"
+git clone https://github.com/dashenbibi/novel-master.git "%USERPROFILE%\.agents\skills\novel-master"
+```
+
+安装完成后，重启 OpenClaw 或刷新技能列表。
 
 ### 支持 Skills 的 VS Code Agent 环境
 
+**macOS / Linux:**
+
 ```bash
 mkdir -p ~/.agents/skills
 git clone https://github.com/dashenbibi/novel-master.git ~/.agents/skills/novel-master
+```
+
+**Windows (PowerShell):**
+
+```powershell
+mkdir -Force "$HOME\.agents\skills"
+git clone https://github.com/dashenbibi/novel-master.git "$HOME\.agents\skills\novel-master"
+```
+
+**Windows (CMD):**
+
+```cmd
+mkdir "%USERPROFILE%\.agents\skills"
+git clone https://github.com/dashenbibi/novel-master.git "%USERPROFILE%\.agents\skills\novel-master"
 ```
 
 然后重启 VS Code 窗口，或执行 "Reload Window"。
@@ -177,7 +206,9 @@ git clone https://github.com/dashenbibi/novel-master.git ~/.agents/skills/novel-
 
 1. 在 GitHub 页面点击 "Code" → "Download ZIP"
 2. 解压后重命名为 `novel-master`
-3. 把目录放到 `~/.agents/skills/`
+3. 把目录放到：
+   - **macOS / Linux**: `~/.agents/skills/`
+   - **Windows**: `%USERPROFILE%\.agents\skills\`（如 `C:\Users\你的用户名\.agents\skills\`）
 4. 重启工具并测试调用
 
 ---
