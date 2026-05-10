@@ -1,0 +1,10 @@
+{
+  "name": "novel-master",
+  "version": "1.0.0",
+  "description": "面向中文长篇连载的结构化 AI writing skill",
+  "author": "dashenbibi",
+  "repository": "https://github.com/dashenbibi/novel-master",
+  "keywords": ["novel", "writing", "chinese", "fiction", "长篇小说", "连载", "AI写作"],
+  "license": "MIT",
+  "main": "SKILL.md"
+}
